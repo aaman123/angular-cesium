@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PlaneComponentComponent } from './plane-component/plane-component.component';
+
 
 @Component({
   selector: 'app-root',
