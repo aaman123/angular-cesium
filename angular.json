@@ -21,15 +21,22 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              { "glob": "**/*", "input": "./node_modules/cesium/Build/Cesium", "output": "./assets/cesium" }
+              { "glob": "**/*", "input": "./node_modules/cesium/Build/Cesium", "output": "./assets/cesium" },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images",
+                "output": "leaflet/"
+              }
             ],
             "styles": [
               "src/styles.css",
               "./node_modules/cesium/Build/Cesium/Widgets/widgets.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/leaflet/dist/leaflet.css"
             ],
             "scripts": [
-              "./node_modules/cesium/Build/Cesium/Cesium.js"
+              "./node_modules/cesium/Build/Cesium/Cesium.js",
+              "./node_modules/leaflet/dist/leaflet.js"
             ],
             "es5BrowserSupport": true
           },

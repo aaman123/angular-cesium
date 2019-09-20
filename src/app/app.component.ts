@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { Component , ElementRef} from '@angular/core';
 import { PlaneComponentComponent } from './plane-component/plane-component.component';
+import { Map, latLng, tileLayer, Layer, marker } from 'leaflet';
+
+declare let L;
+
 
 
 @Component({
@@ -8,5 +12,7 @@ import { PlaneComponentComponent } from './plane-component/plane-component.compo
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  map: Map;
   title = 'UAV-NEW';
+
 }
